@@ -1,0 +1,9 @@
+# Python
+__pycache__/
+/*.egg-info
+/*.pyc
+/.eggs
+/dist
+/.venv
+
+_build/
