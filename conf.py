@@ -1,7 +1,5 @@
 # SPDX-License-Identifier: BSD-3-Clause
 import os, sys, datetime
-sys.path.insert(0, os.path.abspath('.'))
-
 
 version   = 'latest' # :nocov:
 project   = 'prjxylene'
@@ -21,7 +19,6 @@ extensions = [
 	'sphinxcontrib.platformpicker',
 	'sphinxcontrib.wavedrom',
 	'myst_parser',
-	'sphinx_construct',
 	'sphinx_rtd_theme',
 ]
 
@@ -78,3 +75,7 @@ mermaid_version = ''
 
 offline_skin_js_path = '_static/js/wavedrom.skin.js'
 offline_wavedrom_js_path = '_static/js/wavedrom.min.js'
+
+exclude_patterns = [
+	'README.md'
+]
